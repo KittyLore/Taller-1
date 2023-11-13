@@ -1,0 +1,73 @@
+#include <stdio.h>
+#include <string.h>
+
+struct Estudiante {
+
+    char nombres [20];
+    int notas [3];
+    float Promedio;
+};
+
+struct Maestro{
+
+    char nombres [20];
+};
+
+void cNotas(Estudiante) {
+    prints("Notas de %s:\n", Estudiante.nombres);
+    for (int i = 0; i < 3; i++) {
+        suma += Estudiante->notas[i];
+        }
+    suma += estudiante->notas[i] 
+    return suma / 3;
+};
+
+float cPromedio(Estudiante Estudiante) {
+    int suma = 0;
+    for (int i = 0; i < 3; i++) {
+        suma += Estudiante.notas[i];
+    }
+    return suma / 3;
+}
+int main() {
+    Estudiante estudiantes[3] = {
+        {"Angeli Tavera", {50, 45, 48}},
+        {"Valery Ramos", {20, 25, 10}},
+        {"Valentina Rodriguez", {30, 32, 40}},
+        {"Samuel Sereno", {30, 46, 38}},
+        {"Amaury Vega", {25, 50, 40}},
+    }
+    };
+    int opcion, idEstudiante;
+
+    do {
+    	printf("\n\n Estudiantes de clase: \n1. Angeli Tavera\n2. Valery Ramos\n3. Valentina Rodriguez 
+        \n4. Samuel Sereno \n5. Amaury Vega \n");
+        printf("\nOpciones:\n1. Notas\n2. Promedio\n3. Salir\n Selecione una opcion: ");
+        scanf("%d", &opcion);
+    };
+        if (opcion >= 1 && opcion <= 2) {
+            printf("Ingrese el Id Estudiante (1, 2 o 3): ");
+            scanf("%d", &idEstudiante);
+        };
+            if (idEstudiante >= 1 && idEstudiante <= 5) {
+                if (opcion == 1) {
+                    cNotas(estudiantes[idEstudiante - 1]);
+                } else {
+                    float promedio = cPromedio(estudiantes[idEstudiante - 1]);
+                    printf("Promedio de %s: %.2f\n", estudiantes[idEstudiante - 1].nombre, Promedio);
+                }
+            };
+
+else {
+                printf("Id del estudiante no es correcto por favor intentelo nuevamente\n");
+            }
+         else if (opcion != 3) {
+            printf("Elecion no valida.\n");
+        }
+{
+        {
+    } while (opcion != 0);
+
+    return 0;
+}
